@@ -1,3 +1,5 @@
+package employees;
+
 public class Employee {
     private String fullName;
     private double salary;
@@ -7,7 +9,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public String getName() {
+    public String getFullName() {
         return fullName;
     }
 
@@ -15,10 +17,11 @@ public class Employee {
         return salary;
     }
 
-    public void setSalary(double newSalary) {
-        this.salary = newSalary;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
+    @Override
     public String toString() {
         return "Employee: " + fullName + ", Salary: " + salary;
     }
